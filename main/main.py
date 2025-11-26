@@ -8,9 +8,8 @@ def tic_tac_toe_winner(board):
 
 def check_empty_values(board):
     for row in board:
-        for item in row:
-            if item == "":
-                return True
+        if "" in row:
+            return True
 
 def check_winner(board):
     for row in board:
